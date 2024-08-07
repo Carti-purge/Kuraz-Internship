@@ -1,0 +1,399 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*  header navigation bar */
+@media(max-width: 991px){
+
+    .sidebar{
+        background-color: rgb(224, 189, 189);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.topright{
+    height: 114%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+
+
+  
+  @media(max-width: 1357px){
+    .topright{
+        height: 70%;
+    }
+    
+      }
+
+
+  @media(max-width: 991px){
+.topright{
+    height: 40%;
+}
+  }
+/* BODY CONTENT */
+
+.small1{
+    font-family:"Poppins", sans-serif;
+    color: #DF6951;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 20px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    padding-top: 60px;
+   
+}
+
+.big{
+    font-family: "Volkhov", serif;
+    color:  #181E4B;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 20px;
+    line-height: 1.5cap;
+
+}
+
+.para{
+    padding-left: 20px;
+    font-size: 15px;
+    color:#5E6282;
+    line-height: 2;
+    margin-top: 1px;
+
+}
+.buttons{
+    padding-left: 20px;
+}
+
+.play{
+    border-radius: 100%;
+    background-color: #DF6951;
+    border:none;
+    color: white;
+    
+}
+
+.right img{
+    height: 80%;
+    width:auto;
+}
+
+@media(max-width: 991px){
+
+
+    .small1{
+        text-align: center;
+        font-size: 16px;  
+    }
+    
+    .big{
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .para{
+        text-align: center;
+        font-size: 14px;
+        
+    
+    }
+
+    .buttons{
+        text-align: center;
+    }
+
+    .right{
+        justify-content: center;
+    }
+
+    .right img{
+        padding-top: 20px;
+        height: 80%;
+        width:auto;
+        
+    }
+
+}
+
+@media(max-width: 750px){
+    .right{
+        justify-content: center;
+    }
+
+    .right img{
+        padding-top: 20px;
+        height: 60%;
+        width:auto;
+        
+    }
+
+}
+
+@media(max-width: 450px){
+    .right{
+        justify-content: center;
+    }
+
+    .right img{
+        padding-top: 20px;
+        height: 50%;
+        width:auto;
+        
+    }
+
+}
+
+
+
+/* category */
+
+.category{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    position: relative;
+}
+
+
+.category .title{
+    text-align: center;
+    color:#5E6282;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;  
+}
+
+.category .main{
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    font-family:  "Volkhov", serif;
+}
+
+.card1{
+    justify-content: center;
+    gap: 40px;
+}
+.cards{
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+.cards:hover{
+    transform: translateY(-20px);
+    box-shadow: 2px 5px hsla(0, 0%, 15%, 0.123);
+    cursor: pointer;
+}
+  .cards1{
+    border: none;
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+    display: inline-block;
+    position: relative;
+    box-shadow: 2px 5px hsla(0, 0%, 15%, 0.123);
+    transition: transform 0.3s ease;
+  }
+
+  .cards1:hover{
+    transform: translateY(-20px);
+    box-shadow: 2px 5px hsla(0, 0%, 15%, 0.123);
+    cursor: pointer;
+}
+
+  .card-image{
+    width: 40%;
+    height: 35%;
+    margin-bottom: 10px;
+  }
+  
+  
+   .card-title{
+      font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+  }
+  
+   .card-text{
+      font-size: small;
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 30%);
+   }
+
+   @media(max-width: 991px){
+    .card1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cards:hover{
+        transform: translateX(-20px);
+        box-shadow: 2px 5px hsla(0, 0%, 15%, 0.123);
+        cursor: pointer;
+    }
+    .cards1:hover{
+        transform: translateX(-20px);
+        box-shadow: 2px 5px hsla(0, 0%, 15%, 0.123);
+        cursor: pointer;
+    }
+   }
+
+/* top selling */
+
+.custom-card{
+    transition: transform 0.3s ease !important;
+}
+.custom-card:hover{
+    transform: translateY(-20px) !important;
+}
+
+.custom-card-body{
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: white;
+    
+
+}
+
+@media(max-width: 991px){
+    .custom-card:hover{
+        transform: translateX(-20px) !important;
+
+    }
+   
+   }
+
+
+   /* easy and fast */
+
+
+.container .title{
+    text-align: start;
+    color:#5E6282;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;  
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.container .main{
+    text-align: start;
+    font-weight: bold;
+    font-size: 40px;
+    font-family:  "Volkhov", serif;
+    margin-left: 70px;
+}
+
+@media(max-width: 991px){
+    .container .main{
+        font-size: 30px;
+    }
+
+}
+
+.step{
+    display: flex;
+    flex-direction: row;
+}
+
+.step img{
+    width: 65%;
+    margin-left: 60px;
+}
+
+.step .text{
+    margin-left: 40px;
+}
+
+.step .text .title1{
+    font-size: "Poppins", sans-serif;
+    text-align: start;
+    line-height: 1px;
+    font-size: 15px;
+    color: rgb(78, 74, 74);
+}
+
+.step .text .bio{
+    font-size: "Poppins", sans-serif;
+    text-align: start;
+    font-size: 13px;
+    color: rgb(97, 93, 93);
+}
+
+/* testimonials */
+
+.container .titles{
+    text-align: start;
+    color:#5E6282;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    margin: 10px 0;  
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.container .mains{
+    text-align: start;
+    font-weight: bold;
+    font-size: 40px;
+    font-family:  "Volkhov", serif;
+    margin-left: 70px;
+}
+
+.container .row .testimonials img{
+    width: 110% ;      
+}
+
+@media(max-width: 991px) {
+
+    .container .row .testimonials img{
+        width: 100% ;      
+    }
+    
+}
+
+/* Airlines */
+.marquee {
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+.marquee-content {
+    display: flex;
+    width: 200%; /* Adjust this if the image is larger than the container */
+    animation: marquee 40s linear infinite;
+}
+.marquee-content img {
+    width: 70%; 
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
